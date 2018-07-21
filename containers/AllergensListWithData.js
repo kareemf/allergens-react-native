@@ -15,11 +15,12 @@ class AllergensListWithData extends React.Component {
 
     AllergensService
       .get()
-      .then((data) => {
-        const { allergens } = data;
+      .then((response) => {
+        const { data } = response;
+
         this.setState({
           isLoading: false,
-          allergens
+          allergens: data
         });
       })
   }
