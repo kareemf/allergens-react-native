@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-
+import { View, StyleSheet } from 'react-native';
 import { Header, Icon } from 'react-native-elements';
 
 const styles = StyleSheet.create({
@@ -26,7 +25,7 @@ export default class AllergensPageHeader extends React.Component {
   render() {
     return (
       <Header
-        leftComponent={({ icon: 'menu', color: '#fff' })}
+        leftComponent={<View/>}
         centerComponent={{ text: 'Allergens', style: { color: '#fff' } }}
         rightComponent={<AddAllergenButton onPress={this._handleAdd}/>}
       />
