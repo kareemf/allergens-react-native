@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, ActivityIndicator, Text, View  } from 'react-native';
+import { ActivityIndicator, View } from 'react-native';
 
 import AllergensList from '../components/AllergensList';
 

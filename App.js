@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Constants } from 'expo';
 
 import AllergensService from './services/AllergensService';
 import allergensListWithDataInjector from './containers/AllergensListWithData';
@@ -24,8 +25,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: Constants.statusBarHeight,
   },
   content: {}
 });
