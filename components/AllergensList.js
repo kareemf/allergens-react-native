@@ -1,23 +1,31 @@
 import React from 'react';
-import {
-  Text,
-  View,
-  FlatList
-} from 'react-native';
+import { View, Text } from 'react-native';
+import { List, ListItem } from 'react-native-elements'
 
 //TODO: propTypes
 export default class AllergensList extends React.Component {
   render() {
     const { data } = this.props;
 
+    if (!data || !data.length) {
+      return (
+        <View>
+          <Text>Empty list</Text>
+        </View>
+      );
+    }
+
     return (
-      <View>
-        <FlatList
-          data={data}
-          keyExtractor={(item, index) => item.name}
-          renderItem={({item}) => <Text>{item.name}</Text>}
-        />
-      </View>
+      <List>
+        {
+          data.map((item, i) => (
+            <ListItem
+              key={i}
+              title={item.name}
+            />
+          ))
+        }
+      </List>
     );
   }
 }

@@ -2,35 +2,108 @@
 
 exports[`renders correctly 1`] = `
 <View
-  style={Object {}}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#476DC5",
+        "borderBottomColor": "#f2f2f2",
+        "borderBottomWidth": 1,
+        "height": 70,
+        "padding": 15,
+      },
+      undefined,
+      undefined,
+    ]
+  }
 >
   <View
-    style={Object {}}
+    style={
+      Array [
+        Object {
+          "alignItems": "flex-end",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        },
+        undefined,
+      ]
+    }
   >
     <View
-      style={Object {}}
+      onPress={undefined}
+      style={
+        Array [
+          false,
+          false,
+          false,
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "justifyContent": "center",
+          },
+          undefined,
+        ]
+      }
+      underlayColor="white"
     >
       <Text
         accessible={true}
-        allowFontScaling={true}
+        allowFontScaling={false}
         ellipsizeMode="tail"
-      >
-        Allergens
-      </Text>
-    </View>
-    <View
-      style={Object {}}
-    >
-      <View
-        accessibilityComponentType="button"
-        accessibilityLabel={undefined}
-        accessibilityTraits={
+        style={
           Array [
-            "button",
+            Object {
+              "color": "#fff",
+              "fontSize": 24,
+            },
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+              },
+              undefined,
+            ],
+            Object {
+              "fontFamily": "Material Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
           ]
         }
+      >
+        
+      </Text>
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Array [
+          Object {},
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          Object {
+            "color": "#fff",
+          },
+        ]
+      }
+    >
+      Allergens
+    </Text>
+    <View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
         accessible={true}
-        collapsable={undefined}
         hasTVPreferredFocus={undefined}
         hitSlop={undefined}
         isTVSelectable={true}
@@ -43,39 +116,47 @@ exports[`renders correctly 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            false,
+            false,
+            false,
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "justifyContent": "center",
+            },
+            undefined,
+          ]
         }
         testID={undefined}
         tvParallaxProperties={undefined}
       >
-        <View
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
           style={
             Array [
-              Object {},
+              Object {
+                "color": "black",
+                "fontSize": 24,
+              },
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                },
+                undefined,
+              ],
+              Object {
+                "fontFamily": "Material Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
             ]
           }
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            disabled={undefined}
-            ellipsizeMode="tail"
-            style={
-              Array [
-                Object {
-                  "color": "#007AFF",
-                  "fontSize": 18,
-                  "padding": 8,
-                  "textAlign": "center",
-                },
-              ]
-            }
-          >
-            Add
-          </Text>
-        </View>
+          
+        </Text>
       </View>
     </View>
   </View>

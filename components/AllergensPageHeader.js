@@ -1,36 +1,7 @@
 import React from 'react';
-import {
-  Text,
-  View,
-  StyleSheet,
-  Button
-} from 'react-native';
+import { StyleSheet } from 'react-native';
 
-export default class AllergensPageHeader extends React.Component {
-  _onAdd() {
-    console.log("_onAdd invoked!")
-  }
-
-  render() {
-    return (
-      <View style={styles.header}>
-        <View style={styles.navBar}>
-          <View style={styles.title}>
-            <Text>Allergens</Text>
-          </View>
-
-          <View style={styles.buttons}>
-            <Button
-                onPress={this._onAdd}
-                title="Add"
-                style={styles.buttonPrimary}
-              />
-          </View>
-        </View>
-      </View>
-    );
-  }
-}
+import { Header, Icon } from 'react-native-elements';
 
 const styles = StyleSheet.create({
   header: {},
@@ -39,3 +10,26 @@ const styles = StyleSheet.create({
   buttons: {},
   buttonPrimary: {},
 });
+
+const AddAllergenButton = (props) => (
+  <Icon
+    name='add-circle'
+    onPress={props.onPress}
+  />
+);
+
+export default class AllergensPageHeader extends React.Component {
+  _handleAdd() {
+    console.log("_handleAdd invoked!")
+  }
+
+  render() {
+    return (
+      <Header
+        leftComponent={({ icon: 'menu', color: '#fff' })}
+        centerComponent={{ text: 'Allergens', style: { color: '#fff' } }}
+        rightComponent={<AddAllergenButton onPress={this._handleAdd}/>}
+      />
+    );
+  }
+}
