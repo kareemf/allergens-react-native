@@ -17,7 +17,7 @@ it('renders correctly', () => {
   // when component is rendered
   const rendered = renderer.create( <AllergensList data={snapshotData} /> ).toJSON();
 
-  // then rendered tree matche snapshot
+  // then rendered tree matches snapshot
   expect(rendered).toMatchSnapshot();
 });
 
